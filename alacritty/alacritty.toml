@@ -1,0 +1,9 @@
+[font]
+size = 8
+
+[font.normal]
+family = "CaskaydiaCove Nerd Font Mono"
+
+[window.padding]
+x = 10
+y = 10
