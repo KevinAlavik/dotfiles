@@ -22,7 +22,6 @@ default_border pixel 0
 default_border pixel 0
 for_window [class="^.*"] border pixel 0
 
-
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -49,7 +48,7 @@ bindsym XF86Sleep exec ~/.config/i3/lock-and-suspend.sh
 
 exec --no-startup-id xss-lock -- ~/.config/i3/lock-and-suspend.sh
 
-bindsym $mod+Tab exec --no-startup-id rofi -show window -theme Arc-Dark
+bindsym $mod+Tab exec --no-startup-id rofi -show window
 
 exec_always --no-startup-id bash ~/.config/i3/startup.sh
 
@@ -77,7 +76,7 @@ bindsym $mod+Shift+s exec flameshot gui
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show run -theme Arc-Dark
+bindsym $mod+d exec --no-startup-id rofi -show run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
