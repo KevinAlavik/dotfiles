@@ -30,8 +30,8 @@ exec --no-startup-id polybar
 exec_always --no-startup-id bash ~/.config/i3/startup.sh
 
 # Lock and suspend
-bindsym XF86Sleep exec ~/.config/i3/lock-and-suspend.sh
-exec --no-startup-id xss-lock -- ~/.config/i3/lock-and-suspend.sh
+bindsym XF86Sleep exec ~/.config/i3/lock
+exec --no-startup-id xss-lock -- ~/.config/i3/lock
 
 # Rofi
 bindsym $mod+Tab exec --no-startup-id rofi -show window
