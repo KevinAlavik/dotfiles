@@ -22,7 +22,6 @@ for_window [class="^.*"] border pixel 4
 
 # Autostart applications
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id flameshot
 exec --no-startup-id feh --bg-scale ~/wallpaper.jpg
@@ -31,7 +30,7 @@ exec_always --no-startup-id bash ~/.config/i3/startup.sh
 
 # Lock and suspend
 bindsym XF86Sleep exec ~/.config/i3/lock
-exec --no-startup-id xss-lock -- ~/.config/i3/lock
+exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/lock
 
 # Rofi
 bindsym $mod+Tab exec --no-startup-id rofi -show window
